@@ -15,12 +15,24 @@ h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
-
-/* Header */
-header {
-  text-align: center;
+#portfolio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
+/* Each portfolio item */
+#portfolio section {
+  width: 30%;
+  text-align: center;
+}
+/* Header */
+header {
+  display: flex;
+  align-items: center;          /* vertical centering */
+  justify-content: center; 
+  padding: 30px 40px;
+}
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -33,7 +45,7 @@ article {
 }
 
 article div {
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -64,7 +76,7 @@ img {
 
 .image-circle {
   border: 2px solid #003049;
-  border-radius: 50%;
+  border-radius: 200%;
 }
 
 /* Footer */
@@ -75,4 +87,49 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+/* Flex row for About image + first paragraph */
+.about-row {
+  display: flex;
+  align-items: flex-start; /* top align image and text */
+  gap: 30px;
+}
+
+/* Text next to image */
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Image styling */
+.about-row img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #003049;
+  margin-top: 50px;
+}
+
+
+/* Optional: limit image size */
+.about-row img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #003049;
+}
+/* Flex row for About image + first text */
+.about-row {
+  display: flex;
+  align-items: flex-start; /* vertically align top */
+  gap: 30px;               /* space between image and text */
+}
+
+
+
+p.align-right {
+  text-align: right;       /* Align text to right */
+  margin-left: auto;       /* Push the paragraph to the far right */
+  margin-right: 0;
+  width: fit-content;      /* Shrink width to fit text only */
 }
