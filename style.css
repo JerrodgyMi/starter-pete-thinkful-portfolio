@@ -19,8 +19,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 0;
 }
-
+.portfolio-heading {
+  margin-top: 80px;
+}
 /* Each portfolio item */
 #portfolio section {
   width: 30%;
